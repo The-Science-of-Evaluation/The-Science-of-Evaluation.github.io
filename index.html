@@ -1,0 +1,497 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>The Science of Evaluation — Tentative Workshop</title>
+<meta name="description" content="The Science of Evaluation: a tentative workshop that treats AI evaluation itself as the object of study, across LLMs, multimodal AI, digital agents, and physical AI." />
+<meta property="og:title" content="The Science of Evaluation — Tentative Workshop" />
+<meta property="og:description" content="Validity, reliability, and generalization of AI evaluation across LLMs, multimodal AI, digital agents, and physical AI." />
+<meta property="og:image" content="https://the-science-of-evaluation.github.io/assets/img/og.jpg" />
+<meta property="og:url" content="https://the-science-of-evaluation.github.io/" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+<link rel="stylesheet" href="hero-measure.css" /><!-- optional hero measurement motifs; delete this line to roll back -->
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="#top" class="brand">
+      <span class="brand-mark">Science of Evaluation</span>
+      <span class="brand-sub">Workshop</span>
+    </a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#call">Call for Papers</a>
+      <a href="#dates">Dates</a>
+      <a href="#speakers">Speakers</a>
+      <a href="#schedule">Schedule</a>
+      <a href="#organizers">Organizers</a>
+      <a href="#sponsor">Sponsor</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section id="top" class="hero">
+  <div class="hero-grid" aria-hidden="true"></div>
+  <canvas id="hero-wind" class="hero-wind" aria-hidden="true"></canvas>
+  <div class="hero-inner">
+    <div class="kicker">
+      <span class="badge">Workshop</span>
+      <span class="status">Tentative</span>
+      <span class="dot">·</span>
+      <span>Full-day · In-person</span>
+    </div>
+    <h1>
+      The Science of<br/>
+      <span class="grad">Evaluation</span><span class="working-title" title="The workshop name may change before it is finalized.">working title</span>
+    </h1>
+    <p class="lede">
+      Evaluation decides which capabilities the field pursues, yet it is still practiced more as a
+      craft than a science. This workshop brings together researchers across LLMs, multimodal
+      understanding and generation, digital agents, and physical AI to treat evaluation itself
+      as the object of study.
+    </p>
+    <div class="meta">
+      <div class="meta-item">
+        <span class="meta-label">Venue</span>
+        <span class="meta-value">To be announced</span>
+      </div>
+      <div class="meta-item">
+        <span class="meta-label">Date</span>
+        <span class="meta-value">To be announced</span>
+      </div>
+      <div class="meta-item">
+        <span class="meta-label">Paper deadline</span>
+        <span class="meta-value">February 1, 2027 (tentative)</span>
+      </div>
+    </div>
+    <p class="tentative-note">
+      <strong>Tentative.</strong> This workshop has not yet been confirmed. All details on this page,
+      including the title, venue, and dates, are provisional and may change.
+    </p>
+    <div class="cta">
+      <a class="btn primary" href="#call">Call for Papers →</a>
+      <a class="btn ghost" href="#speakers">Speakers</a>
+      <a class="btn ghost" href="#schedule">Schedule</a>
+      <a class="btn ghost" href="#organizers">Organizers</a>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="section">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">01 · Overview</span>
+      <h2>About the workshop</h2>
+    </div>
+    <div class="about-grid">
+      <div class="prose">
+        <p>
+          <strong>Evaluation is the compass for AI progress: what we choose to measure shapes what we
+          choose to build.</strong> Each major shift in AI has been marked by a parallel shift in how
+          progress is measured, from classification accuracy on ImageNet, to language understanding on
+          GLUE and SuperGLUE, to knowledge and reasoning on MMLU and GSM8K, to the open-ended,
+          interactive, and embodied settings now probed by Chatbot Arena, SWE-bench, and a growing
+          family of agentic and physical-AI testbeds.
+        </p>
+        <p>
+          Despite this influence, evaluation is still practiced more as a craft than a science.
+          Benchmarks are contaminated or saturated before anyone agrees how to detect it, generative
+          metrics borrowed from earlier tasks go unvalidated against human judgment, agent success
+          rates hide how success was obtained, and physical AI results rarely transfer across labs.
+        </p>
+        <p>
+          <strong>The Science of Evaluation</strong> is organized around the premise that these
+          problems have more in common than domain boundaries suggest. By bringing researchers from
+          different areas into the same room, we aim to find out which evaluation principles hold
+          across domains and which do not, so that each community can borrow validated practices from
+          the others instead of reinventing them.
+        </p>
+      </div>
+      <aside class="news" aria-label="News">
+        <h3>News</h3>
+        <div class="news-scroll">
+          <p><span class="news-date">[2026-10]</span> The workshop website is online. Details are tentative; the call for papers is planned for December 2026.</p>
+          <p><span class="news-date">[2026-10]</span> Six invited speakers and panelists confirmed, spanning physical and digital AI.</p>
+          <p><span class="news-date">[2026-10]</span> <a href="https://lambda.ai/" target="_blank" rel="noopener">Lambda</a> sponsors a Best Paper award, two Runner-up awards, and compute credits for every accepted paper.</p>
+        </div>
+      </aside>
+    </div>
+
+    <h3 class="sub-head">Four domains, one set of questions</h3>
+    <div class="domains">
+      <div class="topic">
+        <div class="topic-num">LLMs &amp; coding</div>
+        <h3>Contamination &amp; saturation</h3>
+        <p>Training data overlaps with test questions, and benchmarks are driven to ceiling within a year or two.</p>
+      </div>
+      <div class="topic">
+        <div class="topic-num">Multimodal generation</div>
+        <h3>Borrowed, unvalidated metrics</h3>
+        <p>Metrics such as FID were built for earlier tasks, and human evaluation protocols vary across papers.</p>
+      </div>
+      <div class="topic">
+        <div class="topic-num">Digital agents</div>
+        <h3>Success rates that hide the how</h3>
+        <p>A higher score may reflect a larger retry budget or broader tool access, not a more capable agent.</p>
+      </div>
+      <div class="topic">
+        <div class="topic-num">Physical AI</div>
+        <h3>Results that rarely transfer</h3>
+        <p>Safety constraints, hardware cost, and the sim-to-real gap mean almost no two labs evaluate alike.</p>
+      </div>
+    </div>
+
+    <figure class="figure">
+      <img src="assets/img/teaser.jpg" alt="Illustration: AI capabilities in LLMs and coding, multimodal AI, digital agents, and physical AI blow like wind into a sail labeled Evaluation, which steers a boat toward a lighthouse of meaningful progress: safety, trustworthiness, and economic value. Below, the three core questions: validity, reliability, and generalization and utility." width="1800" height="600" />
+      <figcaption><strong>Evaluation as the compass and sail of AI progress.</strong> Growing AI capabilities provide the driving force, while evaluation shapes optimization objectives and guides development across domains.</figcaption>
+    </figure>
+
+    <p class="quote">
+      If capability is the wind that drives AI forward, evaluation is the compass and the rudder: it
+      generates none of the force itself, but it decides whether that force takes us somewhere worth going.
+    </p>
+  </div>
+</section>
+
+<section id="questions" class="section alt">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">02 · Core questions</span>
+      <h2>Three questions behind every evaluation claim</h2>
+      <p class="section-sub">Speakers and participants will be asked to state the principle they rely on in their own evaluation practice, the evidence that supports it, and the conditions under which it stops holding.</p>
+    </div>
+    <div class="questions">
+      <div class="question validity">
+        <h3>Validity</h3>
+        <p class="ask">What do evaluation results actually measure?</p>
+        <p>How should a capability, such as physical plausibility in video generation or robustness in agent planning, be decomposed into measurable, checkable dimensions? How can an evaluation separate the capability it claims to test from shortcuts such as training-data overlap, favorable tool configurations, larger retry budgets, or uncredited human assistance?</p>
+      </div>
+      <div class="question reliability">
+        <h3>Reliability</h3>
+        <p class="ask">When can evaluation results be trusted?</p>
+        <p>How should human annotators and model-based judges be calibrated and audited for bias? How should evaluation account for contamination, sampling variance, and implementation differences, given that repeated trials are cheap for software but expensive, slow, or physically risky for embodied systems?</p>
+      </div>
+      <div class="question generalization">
+        <h3>Generalization &amp; utility</h3>
+        <p class="ask">Where do evaluation results remain informative?</p>
+        <p>Does a result on a fixed benchmark predict performance on new tasks, environments, users, or hardware? How should evaluation account for failure modes, human intervention, latency, and cost, rather than a single aggregate score? When does saturation mean a benchmark has stopped being informative?</p>
+      </div>
+    </div>
+    <p class="callout">
+      Across these questions, we ask how evaluation design can be made to actively reward
+      <strong>safety</strong>, <strong>trustworthiness</strong>, and <strong>real-world economic value</strong>,
+      and not only raw capability.
+    </p>
+  </div>
+</section>
+
+<section id="call" class="section">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">03 · Call for papers</span>
+      <h2>Call for Papers</h2>
+      <p class="section-sub">
+        We welcome original research and work in progress that treats evaluation itself as the object
+        of study. We invite empirical, theoretical, and methodological contributions, including new
+        benchmarks, benchmark audits, replication studies, negative results, and well-supported position
+        papers. Submissions may focus on a single domain or compare across domains; each should state
+        clearly what it contributes to understanding or improving evaluation, not only to improving a score.
+      </p>
+    </div>
+
+    <div class="banner">
+      <strong>Call for papers opens December 2026 (tentative)</strong>
+      <span>Submission portal: OpenReview (link coming soon) · All deadlines 23:59 AoE</span>
+    </div>
+
+    <h3 class="sub-head">Domains and systems</h3>
+    <div class="domains">
+      <div class="topic">
+        <div class="topic-num">A</div>
+        <h3>LLMs &amp; reasoning</h3>
+        <p>Knowledge, factuality, reasoning, calibration, and multilingual capabilities.</p>
+      </div>
+      <div class="topic">
+        <div class="topic-num">B</div>
+        <h3>Coding &amp; digital agents</h3>
+        <p>Software engineering, tool use, web and computer interaction, and long-horizon workflows.</p>
+      </div>
+      <div class="topic">
+        <div class="topic-num">C</div>
+        <h3>Multimodal understanding &amp; generation</h3>
+        <p>Grounding, compositionality, temporal reasoning, image and video generation, and world modeling.</p>
+      </div>
+      <div class="topic">
+        <div class="topic-num">D</div>
+        <h3>Physical &amp; embodied AI</h3>
+        <p>Robot learning, manipulation, navigation, human–robot interaction, and sim-to-real transfer.</p>
+      </div>
+    </div>
+
+    <h3 class="sub-head">Evaluation research topics</h3>
+    <div class="topics">
+      <div class="topic">
+        <div class="topic-num">01</div>
+        <h3>Benchmark &amp; task design</h3>
+        <p>Capability coverage, task construction, difficulty, saturation, and benchmark maintenance.</p>
+      </div>
+      <div class="topic">
+        <div class="topic-num">02</div>
+        <h3>Measurement validity &amp; diagnosis</h3>
+        <p>Interpretable evaluation dimensions, shortcut detection (e.g., contamination, retry budgets, uncredited assistance), capability attribution, and failure analysis.</p>
+      </div>
+      <div class="topic">
+        <div class="topic-num">03</div>
+        <h3>Human &amp; automated evaluators</h3>
+        <p>Annotation protocols, human preferences, LLM/VLM judges, evaluator bias, and validation against ground truth or human perception.</p>
+      </div>
+      <div class="topic">
+        <div class="topic-num">04</div>
+        <h3>Reliability &amp; reproducibility</h3>
+        <p>Contamination detection, uncertainty estimation, repeated trials, statistical comparisons, and resource-controlled evaluation across software and physical settings.</p>
+      </div>
+      <div class="topic">
+        <div class="topic-num">05</div>
+        <h3>Generalization &amp; real-world utility</h3>
+        <p>Distribution shifts, human intervention, cost, latency, and sim-to-real transfer in realistic workflows.</p>
+      </div>
+      <div class="topic">
+        <div class="topic-num">06</div>
+        <h3>Safety, trustworthiness &amp; incentives</h3>
+        <p>Harmful failures, robustness, appropriate abstention, and the effects of optimizing for a benchmark metric rather than the underlying capability.</p>
+      </div>
+    </div>
+
+    <h3 class="sub-head">Submission tracks</h3>
+    <div class="tracks">
+      <div class="track">
+        <span class="track-tag">Full paper · 4–8 pages</span>
+        <h3>Full Paper Track</h3>
+        <p>4–8 pages excluding references and appendices, using the official template (to be announced). Papers should present substantive empirical, theoretical, or methodological contributions to evaluation, and should be original work not under review at another archival venue.</p>
+      </div>
+      <div class="track">
+        <span class="track-tag">Short paper · up to 4 pages</span>
+        <h3>Short Paper Track</h3>
+        <p>Same format, up to 4 pages excluding references and appendices. Welcomes work in progress, focused experiments, replications, negative results, and recently published work accompanied by a substantive new analysis (e.g., a benchmark audit or follow-up result). Prior or concurrent publication must be disclosed and does not count against acceptance.</p>
+      </div>
+    </div>
+    <p class="note">Authors should identify the primary research domain and evaluation question addressed by their submission, and clearly state its claims, supporting evidence, and limitations. We will prioritize original and ongoing work when selecting contributed talks.</p>
+
+    <h3 class="sub-head">Policies</h3>
+    <div class="policies">
+      <details>
+        <summary>Archival status</summary>
+        <p>The workshop is non-archival and has no formal proceedings. Accepted papers will be made public on OpenReview. Authors remain free to submit accepted papers to archival venues afterward.</p>
+      </details>
+      <details>
+        <summary>Use of large language models</summary>
+        <p>AI systems may not be primary authors or reviewers of workshop papers. Authors must disclose any AI assistance in a dedicated section, which does not count toward the page limit, and remain responsible for every claim, citation, and result. Short-paper submissions must be primarily human-authored; AI assistance is allowed, AI-generated papers are not. Reviewers may use AI tools only to assist their own writing, must disclose such use, and must not paste submissions into tools that retain or train on the text.</p>
+      </details>
+      <details>
+        <summary>Conflicts of interest</summary>
+        <p>Conflicts are declared in OpenReview profiles and computed by OpenReview from institutions and co-authorship. In addition to standard institutional conflicts, we apply these rules:</p>
+        <ul>
+          <li>An organizer or reviewer is conflicted with a paper if any author is at the same institution (for companies, anywhere in the company worldwide), was a co-author in the past three years, or is a current or former advisor or advisee.</li>
+          <li>Conflicted organizers do not see reviews, discussion, or decisions for that paper.</li>
+          <li>Papers with an organizer as author are reviewed only by reviewers outside that organizer's institution and decided by two organizers without a conflict.</li>
+        </ul>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section id="dates" class="section alt">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">04 · Timeline</span>
+      <h2>Important dates</h2>
+      <p class="section-sub">All dates are tentative and may change. Deadlines are 23:59 Anywhere on Earth (AoE).</p>
+    </div>
+    <div class="timeline">
+      <div class="tl-row"><div>Call for papers released</div><div>December 2026 (tentative)</div></div>
+      <div class="tl-row hl"><div>Submission deadline</div><div>February 1, 2027 (tentative)</div></div>
+      <div class="tl-row"><div>Acceptance notification</div><div>February 26, 2027 (tentative)</div></div>
+      <div class="tl-row"><div>Workshop (full day)</div><div>TBA (tentative)</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="speakers" class="section">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">05 · Speakers &amp; panelists</span>
+      <h2>Invited speakers and panelists</h2>
+      <p class="section-sub">Researchers whose datasets and benchmarks their fields use to measure progress.</p>
+    </div>
+    <div id="speakers-grid" class="people-grid speakers"></div>
+  </div>
+</section>
+
+<section id="schedule" class="section alt">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">06 · Schedule</span>
+      <h2>Tentative program</h2>
+      <p class="section-sub">The morning centers on evaluation in physical AI, the afternoon on digital AI, and the closing panel connects the two halves.</p>
+    </div>
+    <div class="schedule">
+      <div class="schedule-row head">
+        <div>Time</div><div>Session</div>
+      </div>
+      <div class="schedule-session">Morning session — Evaluation Practices in Physical AI <span>(robotics, embodied agents, etc.)</span></div>
+      <div class="schedule-row">
+        <div class="time">09:00 – 09:10</div>
+        <div><strong>Opening remarks</strong></div>
+      </div>
+      <div class="schedule-row">
+        <div class="time">09:10 – 10:10</div>
+        <div><strong>Invited talks</strong> — Shuran Song and Manling Li</div>
+      </div>
+      <div class="schedule-row break">
+        <div class="time">10:10 – 10:25</div>
+        <div>☕ Coffee break</div>
+      </div>
+      <div class="schedule-row">
+        <div class="time">10:25 – 11:25</div>
+        <div><strong>Contributed talks</strong> — Four talks, 15 min each</div>
+      </div>
+      <div class="schedule-row">
+        <div class="time">11:25 – 12:15</div>
+        <div><strong>Poster session I</strong></div>
+      </div>
+      <div class="schedule-row break">
+        <div class="time">12:15 – 14:00</div>
+        <div>🥗 Lunch break</div>
+      </div>
+      <div class="schedule-session digital">Afternoon session — Evaluation Practices in Digital AI <span>(vision, multimodality, LLMs, etc.)</span></div>
+      <div class="schedule-row">
+        <div class="time">14:00 – 15:00</div>
+        <div><strong>Invited talks</strong> — Ranjay Krishna and Ziwei Liu</div>
+      </div>
+      <div class="schedule-row">
+        <div class="time">15:00 – 15:30</div>
+        <div><strong>Contributed talks</strong> — Two talks, 15 min each</div>
+      </div>
+      <div class="schedule-row">
+        <div class="time">15:30 – 16:15</div>
+        <div><strong>Poster session II</strong></div>
+      </div>
+      <div class="schedule-row break">
+        <div class="time">16:15 – 16:30</div>
+        <div>☕ Coffee break</div>
+      </div>
+      <div class="schedule-session joint">Panel &amp; closing</div>
+      <div class="schedule-row">
+        <div class="time">16:30 – 17:30</div>
+        <div><strong>Panel discussion</strong>
+          <span class="detail">Shuran Song, Manling Li, Tianxing Chen, Ranjay Krishna, Ziwei Liu, and Jiawei Gu</span></div>
+      </div>
+      <div class="schedule-row">
+        <div class="time">17:30 – 17:55</div>
+        <div><strong>Closing remarks</strong> &amp; best paper award</div>
+      </div>
+    </div>
+    <p class="note">Times are local to the workshop venue and subject to change. A short checklist for interpreting evaluation claims and a summary of the panel discussion will be published on this website after the workshop.</p>
+  </div>
+</section>
+
+<section id="organizers" class="section">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">07 · Organizers</span>
+      <h2>Organizing committee</h2>
+      <p class="section-sub">A team spanning multimodal understanding and generation, LLMs and digital agents, physical and embodied AI, and reliability and uncertainty, across Singapore, the United States, and Canada.</p>
+    </div>
+    <div id="organizers-grid" class="people-grid"></div>
+  </div>
+</section>
+
+<section id="sponsor" class="section alt">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">08 · Sponsor</span>
+      <h2>Sponsor &amp; awards</h2>
+      <p class="section-sub">We gratefully acknowledge Lambda's support of the workshop's paper awards and compute credits for every accepted paper.</p>
+    </div>
+    <div class="sponsor">
+      <a class="sponsor-card" href="https://lambda.ai/" target="_blank" rel="noopener" aria-label="Visit Lambda's website">
+        <img src="assets/sponsors/lambda.svg" alt="Lambda" width="196" height="42" />
+        <span class="sponsor-description">AI compute in the cloud</span>
+        <span class="sponsor-link">Visit website →</span>
+      </a>
+      <div class="awards">
+        <div class="award">
+          <span class="meta-label">Best Paper</span>
+          <strong>$3,000</strong>
+          <span>in compute credits</span>
+        </div>
+        <div class="award">
+          <span class="meta-label">Runner-up × 2</span>
+          <strong>$1,500</strong>
+          <span>in compute credits each</span>
+        </div>
+        <div class="award">
+          <span class="meta-label">Every accepted paper</span>
+          <strong>$400</strong>
+          <span>in compute credits</span>
+        </div>
+      </div>
+    </div>
+    <p class="note">Organizer Jianwen Xie is affiliated with Lambda and recuses himself from all paper-award decisions.</p>
+  </div>
+</section>
+
+<section id="contact" class="section">
+  <div class="container">
+    <div class="contact-card">
+      <div>
+        <span class="eyebrow">09 · Contact</span>
+        <h2>Get in touch</h2>
+        <p>For questions about the workshop, submissions, or sponsorship, please reach out to Ziqi Huang:</p>
+        <p class="email">
+          <a href="mailto:connie.huangziqi@gmail.com">connie.huangziqi@gmail.com</a>
+        </p>
+      </div>
+      <div class="contact-side">
+        <div class="contact-block">
+          <span class="meta-label">Venue</span>
+          <span class="meta-value">To be announced</span>
+        </div>
+        <div class="contact-block">
+          <span class="meta-label">Format</span>
+          <span class="meta-value">Full-day, in-person</span>
+        </div>
+        <div class="contact-block">
+          <span class="meta-label">After the workshop</span>
+          <span class="meta-value">Recordings (with speaker consent), slides, and the community checklist will be posted here.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div>
+      <strong>The Science of Evaluation</strong> (working title) · Tentative workshop
+    </div>
+    <div class="credit">
+      © 2026 The Science of Evaluation Workshop Organizers. Website template adapted from the
+      <a href="https://phys-ai-workshop.github.io/eccv26/" target="_blank" rel="noopener">PhysAI Workshop @ ECCV 2026</a>
+      and <a href="https://ziqihuangg.github.io/" target="_blank" rel="noopener">Ziqi Huang's homepage</a>.
+    </div>
+  </div>
+</footer>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

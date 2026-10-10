@@ -1,0 +1,22 @@
+/* Hero measurement motifs: a 0-100 gauge, a target (validity & reliability), and a ruler.
+   To roll back, remove the <link> to this file in index.html (and optionally delete this
+   file and assets/img/hero-measure.svg). */
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background:
+    url(assets/img/hero-measure.svg) right top / auto 100% no-repeat,
+    repeating-linear-gradient(90deg, rgba(20, 22, 28, 0.22) 0 1px, transparent 1px 50px) left bottom / 100% 12px no-repeat,
+    repeating-linear-gradient(90deg, rgba(20, 22, 28, 0.14) 0 1px, transparent 1px 10px) left bottom / 100% 6px no-repeat;
+}
+@media (max-width: 720px) {
+  /* Text spans the full width on phones; keep only the ruler. */
+  .hero::after {
+    background:
+      repeating-linear-gradient(90deg, rgba(20, 22, 28, 0.22) 0 1px, transparent 1px 50px) left bottom / 100% 12px no-repeat,
+      repeating-linear-gradient(90deg, rgba(20, 22, 28, 0.14) 0 1px, transparent 1px 10px) left bottom / 100% 6px no-repeat;
+  }
+}
